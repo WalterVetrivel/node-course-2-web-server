@@ -48,6 +48,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects', {
+        title: 'Labour in the Lord',
+    });
+});
+
 app.get('/error', (req, res) => {
     console.log('Request for error page');
     res.send({
